@@ -1,7 +1,7 @@
 file_path = ARGS[1] #"data/day-17.txt"
 data = readline(file_path)
 
-m = match(r"target area: x=(\d+)..(\d+), y=([-]\d+)..([-]\d+)", data)
+m = match(r"target area: x=(\d+)..(\d+), y=(-\d+)..(-\d+)", data)
 const xa, xb, ya, yb = parse.(Ref(Int), m.captures) # x-values > 0; y-values < 0 - always.
 
 tmin, tmax = 1, -2ya # tmax - from formulas
