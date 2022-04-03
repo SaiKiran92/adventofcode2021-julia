@@ -1,2 +1,1 @@
-Player 1 starting position: 4
-Player 2 starting position: 8
+target area: x=20..30, y=-10..-5
